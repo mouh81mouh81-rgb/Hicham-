@@ -1,0 +1,6 @@
+{
+  "name": "Classic Reads English Literature 5c40",
+  "description": "Mobile-first bilingual English and Arabic reading app for learning English through classic literature, featuring atmospheric gothic aesthetics, audio narration, and interactive vocabulary.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

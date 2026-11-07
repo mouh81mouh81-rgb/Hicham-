@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #171412;
+    color: #2b241c;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-amiri {
+  font-family: 'Amiri', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-lora {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Vintage parchment paper styling */
+.parchment-bg {
+  background-color: #f7f1e3;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.45) 0%, transparent 60%),
+    radial-gradient(ellipse at center, #fbf7ee 0%, #f4ebda 65%, #eae0c9 100%),
+    repeating-linear-gradient(45deg, rgba(160, 130, 95, 0.015) 0px, rgba(160, 130, 95, 0.015) 2px, transparent 2px, transparent 4px);
+  box-shadow: inset 0 0 45px rgba(130, 95, 55, 0.12), inset 0 0 10px rgba(95, 65, 30, 0.08);
+}
+
+.parchment-border {
+  border-color: #d6c6a8;
+}
+
+/* Spiderweb corner watermark watermark */
+.spiderweb-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.18;
+}
+
+.spiderweb-corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  transform: scaleX(-1);
+}
+
+.spiderweb-corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  transform: scaleY(-1);
+}
+
+.spiderweb-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  transform: scale(-1);
+}
+
+/* Pink vocabulary highlights */
+.vocab-highlight {
+  background-color: #fce7f3;
+  color: #9d174d;
+  font-weight: 600;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  border-bottom: 2px solid #f472b6;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  display: inline-block;
+}
+
+.vocab-highlight:hover, .vocab-highlight:active {
+  background-color: #fbcfe8;
+  color: #831843;
+  transform: translateY(-1px);
+}
+
+.vocab-highlight-active {
+  background-color: #f472b6 !important;
+  color: #ffffff !important;
+  border-bottom-color: #db2777 !important;
+  box-shadow: 0 2px 8px rgba(244, 114, 182, 0.4);
+}
